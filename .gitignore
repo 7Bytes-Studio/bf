@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+bf/bf/.idea/
+bf/.idea/
+bf/bf/bin/
