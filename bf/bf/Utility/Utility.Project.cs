@@ -7,7 +7,6 @@
 --------------------------------------------------
 */
 
-using System;
 using System.IO;
 
 namespace bf
@@ -31,7 +30,7 @@ namespace bf
                 var root = string.Format("{0}:/Workspace/Project/{1}",d,projectType);
                 var projectRoot = Path.Combine(root,projectName);
                 projectRoot = Path.Combine(projectRoot,projectName);
-                Console.WriteLine(projectRoot);
+                //Console.WriteLine(projectRoot);
                 BlackFire.Utility.IO.ExistsOrCreateFolder(projectRoot+".Art");
                 BlackFire.Utility.IO.ExistsOrCreateFolder(projectRoot+".Build");
                 BlackFire.Utility.IO.ExistsOrCreateFolder(projectRoot+".Design");
