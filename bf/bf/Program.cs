@@ -24,13 +24,22 @@ namespace bf
                     return 1;
                 }
                 
-                if (3<=args.Length) 
+                
+                
+                
+                if (2<=args.Length) 
                 {
                     if ("new"==args[0]) // bf new unity ProjectName c 
                     {
                         Utility.Project.CheckOrCreateProjectFolder_Windows(args[2],args[1],4<=args.Length?args[3][0].ToString():"d");
                         return 1;
                     }
+                    else if ("svn"==args[0]) //bf svn Demo
+                    {
+                        Utility.Project.CheckOrCreateSvnFolder(args[1],2<=args.Length?args[1][0].ToString():"d");
+                        return 1;
+                    }
+                    
                 }
             }
             
@@ -49,7 +58,11 @@ namespace bf
             Console.WriteLine("Options:");
             Console.WriteLine();
             Console.WriteLine("    new [Project Type] [Project Name] [Drive]");
+            Console.WriteLine("    svn");
         }
+
+
+      
 
 
 
